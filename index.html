@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATG World</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <header>
+            <div class="header_top">
+                <div
+                    class="row row-cols-md-3 row-cols-1 align-items-center justify-content-md-evenly justify-content-center m-0">
+                    <div class="col logo d-flex align-items-center justify-content-center">
+                        <span class="logo_1">ATG.</span>
+                        <span class="logo_2">W</span>
+                        <span class="logo_3"><img src="images/Union 1.png" alt=""></span>
+                        <span class="logo_2">RLD</span>
+                    </div>
+                    <div class="col search d-lg-flex align-items-center ps-5 d-none">
+                        <input type="text" name="search" id="search_bar"
+                            placeholder="Search For Your Favourite Groups In ATG">
+                    </div>
+                    <div class="col create_acc text-end d-none d-md-block">
+                        <span class="create_acc1">Create Account.</span>
+                        <span class="create_acc2">It's Free!</span>
+                        <span role="button"><img src="images/Vector copy.svg" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="header_bottom">
+                <div class="header_bg">
+                    <div class="header_overlay">
+                        <div class="d-flex justify-content-between align-items-center p-3 d-md-none">
+                            <div role="button">
+                                <img src="images/arrow_back_24px.svg" alt="">
+                            </div>
+                            <div class="header_join d-flex align-items-center justify-content-between" role="button"
+                                id="header_join_grp">
+                                <div>
+                                    <img src="images/Vector copy 2.svg" alt="">
+                                </div>
+                                <div class="ms-2" id="mob_join_grp">
+                                    Join Group
+                                </div>
+                            </div>
+                            <div class="header_join d-flex align-items-center justify-content-between d-none"
+                                role="button" id="header_leave_grp">
+                                <div>
+                                    <img src="images/Vector copy 12.svg" alt="">
+                                </div>
+                                <div class="ms-2">
+                                    Leave Group
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header_overlay1">Computer Engineering</div>
+                        <div class="header_overlay2">142,765 Computer Engineers follow this</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <section class="middle container-lg mt-3 mt-md-5">
+            <div class="content_row1 row row-cols-2 justify-content-between align-items-center d-none d-md-flex">
+                <div class="col row content_column1">
+                    <div class="col-4 col-xl-3  content_item1">All Posts(32)</div>
+                    <div class="col-2 content_item1">Article</div>
+                    <div class="col-2 content_item1">Event</div>
+                    <div class="col-2 content_item1">Education</div>
+                    <div class="col-2 content_item1">Job</div>
+                </div>
+                <div class="col row row-cols-2 content_column2 justify-content-end">
+                    <div class="content_item2_1 d-flex align-items-center justify-content-between" role="button">
+                        <div>
+                            Write A Post
+                        </div>
+                        <div>
+                            <img src="images/Vector copy.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col content_item2_2 d-flex align-items-center justify-content-between" role="button"
+                        id="join_grp">
+                        <div>
+                            <img src="images/Vector copy 2.svg" alt="">
+                        </div>
+                        <div>
+                            Join Group
+                        </div>
+                    </div>
+                    <div class="content_item2_2 content_item2_3 d-flex align-items-center justify-content-between d-none"
+                        role="button" id="leave_grp">
+                        <div>
+                            <img src="images/Vector copy 12.svg" alt="">
+                        </div>
+                        <div>
+                            Leave Group
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mob_content_row1 row row-cols-2 justify-content-between align-items-center d-md-none">
+                <div class="col">
+                    Posts(368)
+                </div>
+                <div class="col text-end select_box">
+                    <select name="" id="">
+                        <option value="">Filter: All</option>
+                        <option value="">Article</option>
+                        <option value="">Event</option>
+                        <option value="">Education</option>
+                        <option value="">Job</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content_row2 row justify-content-between">
+                <div class="col-md-7 col-12 post_section">
+                    <div class="post_box">
+                        <div class="post_img">
+                            <img src="images/Rectangle 5.png" alt="">
+                        </div>
+                        <div class="article">
+                            <img src="images/✍️ Article.svg" alt="">
+                        </div>
+                        <div class="post_title row">
+                            <div class="col-10">What if famous brands had regular fonts? Meet RegulaBrands!</div>
+                            <div class="col-2 text-end post_opt">
+                                <img src="images/Vector copy 3.svg" alt="" class="dots" id="dots1">
+                                <div class="options" id="options1">
+                                    <ul>
+                                        <li>Edit</li>
+                                        <li>Report</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abt_post">
+                            I've worked in UX for the better part of a decade. From now on, I plan to rei…
+                        </div>
+                        <div class="author row row-cols-2 justify-content-between align-items-center">
+                            <div class="col">
+                                <img src="images/Rectangle 3.svg" alt="">
+                                <span class="name">Sarthak Kamra</span>
+                            </div>
+                            <div class="col text-end">
+                                <img src="images/visibility_24px_outlined.svg" alt="" class="me-1">
+                                <span class="me-1 views">1.4k Views</span>
+                                <img src="images/Vector copy 4.svg" alt="" class="share">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_box">
+                        <div class="post_img">
+                            <img src="images/Rectangle 5 copy.png" alt="">
+                        </div>
+                        <div class="article">
+                            <img src="images/🔬️ Education.svg" alt="">
+                        </div>
+                        <div class="post_title row">
+                            <div class="col-10">Tax Benefits for Investment under National Pension Scheme launched by
+                                Government</div>
+                            <div class="col-2 text-end post_opt">
+                                <img src="images/Vector copy 3.svg" alt="" class="dots" id="dots2">
+                                <div class="options" id="options2">
+                                    <ul>
+                                        <li>Edit</li>
+                                        <li>Report</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="abt_post">
+                            I've worked in UX for the better part of a decade. From now on, I plan to rei…
+                        </div>
+                        <div class="author row row-cols-2 justify-content-between align-items-center">
+                            <div class="col">
+                                <img src="images/Rectangle 3 copy.svg" alt="">
+                                <span class="name">Sarah West</span>
+                            </div>
+                            <div class="col text-end">
+                                <img src="images/visibility_24px_outlined.svg" alt="" class="me-1">
+                                <span class="me-1 views">1.4k Views</span>
+                                <img src="images/Vector copy 4.svg" alt="" class="share">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_box">
+                        <div class="post_img">
+                            <img src="images/Rectangle 5 copy 2.png" alt="">
+                        </div>
+                        <div class="article">
+                            <img src="images/🗓️ Meetup.svg" alt="">
+                        </div>
+                        <div class="post_title row">
+                            <div class="col-11 row align-items-center">
+                                <div class="col-11">Finance & Investment Elite Social Mixer @Lujiazui</div>
+                            </div>
+                            <div class="col-1 text-end post_opt">
+                                <img src="images/Vector copy 3.svg" alt="" class="dots" id="dots3">
+                                <div class="options" id="options3">
+                                    <ul>
+                                        <li>Edit</li>
+                                        <li>Report</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_date row align-items-center">
+                            <div class="col-5 d-flex align-items-center">
+                                <img src="images/Vector copy 5.svg" alt="">
+                                <span class="ms-2">Fri, 12 Oct, 2018</span>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img src="images/Group.svg" alt="">
+                                <span class="ms-2">Ahmedabad, India</span>
+                            </div>
+                        </div>
+                        <div class="visit_web">
+                            Visit Website
+                        </div>
+                        <div class="author row row-cols-2 justify-content-between align-items-center">
+                            <div class="col">
+                                <img src="images/Rectangle 3.jpg" alt="">
+                                <span class="name">Ronal Jones</span>
+                            </div>
+                            <div class="col text-end">
+                                <img src="images/visibility_24px_outlined.svg" alt="" class="me-1">
+                                <span class="me-1 views">1.4k Views</span>
+                                <img src="images/Vector copy 4.svg" alt="" class="share">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post_box">
+                        <div class="article">
+                            <img src="images/💼️ Job.svg" alt="">
+                        </div>
+                        <div class="post_title row">
+                            <div class="col-11 row align-items-center">
+                                <div class="col-11">Software Developer</div>
+                            </div>
+                            <div class="col-1 text-end post_opt">
+                                <img src="images/Vector copy 3.svg" alt="" class="dots" id="dots4">
+                                <div class="options" id="options4">
+                                    <ul>
+                                        <li>Edit</li>
+                                        <li>Report</li>
+                                        <li>Option 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post_date row align-items-center">
+                            <div class="col-5 d-flex align-items-center">
+                                <img src="images/Vector copy 6.svg" alt="">
+                                <span class="ms-2">Innovaccer Analytics Private Ltd.</span>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <img src="images/Group.svg" alt="">
+                                <span class="ms-2">Noida, India</span>
+                            </div>
+                        </div>
+                        <div class="visit_web apply_job">
+                            Apply on Timesjobs
+                        </div>
+                        <div class="author row row-cols-2 justify-content-between align-items-center">
+                            <div class="col">
+                                <img src="images/Rectangle 3 copy.jpg" alt="">
+                                <span class="name">Joseph Gray</span>
+                            </div>
+                            <div class="col text-end">
+                                <img src="images/visibility_24px_outlined.svg" alt="" class="me-1">
+                                <span class="me-1 views">1.4k Views</span>
+                                <img src="images/Vector copy 4.svg" alt="" class="share">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-12 d-md-flex d-none justify-content-end">
+                    <div class="col_right">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="location" id="location">
+                                <input type="text" name="search" id="location_bar" placeholder="Enter Your Location"
+                                    value="Noida, India">
+                                <img src="images/Vector copy 7.svg" alt="" class="change_loc">
+                            </div>
+                        </div>
+                        <div class="info_p1 d-flex justify-content-center mt-4">
+                            <div><img src="images/Vector copy 8.svg" alt=""></div>
+                            <div class="ms-2">Your location will help us serve better <br> and extend a personalised
+                                experience.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <section class="acc_page d-md-flex d-none justify-content-center align-items-center">
+        <div class="signup_page">
+            <div class="signup1">
+                Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼
+                <span class="close_signup_page">
+                    <img src="images/Vector copy 11.svg" alt="">
+                </span>
+            </div>
+            <div class="signup2 row row-cols-2" id="signup_2">
+                <div class="col signup2_1">Create Account</div>
+                <div class="col text-end signup2_2">
+                    <span class="signup2_2_1">Already have an account?</span>
+                    <span class="signup2_2_2" id="go_to_sign">Sign In</span>
+                </div>
+            </div>
+            <div class="signup_3 row row-cols-2" id="signup_3">
+                <div class="col signup_3_1">
+                    <div class="user_info">
+                        <div class="user_input">
+                            <input type="text" name="f_name" id="fname" placeholder="First Name">
+                            <input type="text" name="l_name" id="lname" placeholder="Last Name">
+                        </div>
+                        <div class="user_input">
+                            <input type="email" placeholder="Email" name="email" id="">
+                        </div>
+                        <div class="user_input pass">
+                            <input type="password" placeholder="Password" name="pass" id="show_pass">
+                            <img src="images/visibility_24px_outlined.svg" alt="" class="pass_img">
+                        </div>
+                        <div class="user_input">
+                            <input type="password" placeholder="Confirm Password" name="confirm_pass" id="">
+                        </div>
+                    </div>
+                    <div class="sign_create_acc">
+                        Create Account
+                    </div>
+                    <div class="facebook d-flex justify-content-center align-items-center">
+                        <div><img src="images/f_logo_RGB-Blue_1024.svg" alt=""></div>
+                        <div class="ms-2">Sign up with Facebook</div>
+                    </div>
+                    <div class="google d-flex justify-content-center align-items-center">
+                        <div><img src="images/search.svg" alt=""></div>
+                        <div class="ms-2">Sign up with Google</div>
+                    </div>
+                </div>
+                <div class="col signup_3_2 mt-4">
+                    <div class="sign_img text-end">
+                        <img src="images/Group 3.svg" alt="">
+                    </div>
+                    <div class="signup_3_2_2">
+                        By signing up, you agree to our Terms & conditions, Privacy policy
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="signup2 row row-cols-2 d-none" id="signup_4">
+                <div class="col signup2_1">Sign In</div>
+                <div class="col text-end signup2_2">
+                    <span class="signup2_2_1">Don’t have an account yet?</span>
+                    <span class="signup2_2_2" id="go_to_create">Create new for free!</span>
+                </div>
+            </div>
+            <div class="signup_3 row row-cols-2 d-none" id="signup_5">
+                <div class="col signup_3_1">
+                    <div class="user_info">
+                        <div class="user_input">
+                            <input type="email" placeholder="Email" name="email" id="">
+                        </div>
+                        <div class="user_input pass">
+                            <input type="password" placeholder="Password" name="pass" id="show_pass">
+                            <img src="images/visibility_24px_outlined.svg" alt="" class="pass_img">
+                        </div>
+                    </div>
+                    <div class="sign_create_acc fw-bold">
+                        Sign In
+                    </div>
+                    <div class="facebook d-flex justify-content-center align-items-center">
+                        <div><img src="images/f_logo_RGB-Blue_1024.svg" alt=""></div>
+                        <div class="ms-2">Sign in with Facebook</div>
+                    </div>
+                    <div class="google d-flex justify-content-center align-items-center">
+                        <div><img src="images/search.svg" alt=""></div>
+                        <div class="ms-2">Sign in with Google</div>
+                    </div>
+                    <div class="forgot">Forgot Password?</div>
+                </div>
+                <div class="col signup_3_2 mt-4">
+                    <div class="sign_img text-end">
+                        <img src="images/Group 3.svg" alt="">
+                    </div>
+                    <div class="signup_3_2_2 pb-5">
+                        By signing up, you agree to our Terms & conditions, Privacy policy
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="mobile_bottom d-md-none" id="post_mob">
+        <img src="images/edit_24px_outlined.svg" alt="">
+    </section>
+    <section class="mob_acc_page d-flex justify-content-center align-items-end d-md-none">
+        <div class="signup_page mob_signup_page">
+            <div class="signup2 row justify-content-between align-items-center" id="mob_signup_2">
+                <div class="col-10 signup2_1">Create Account</div>
+                <div class="col-2 text-end" id="close_mob_sign_1" role="button">
+                    <img src="images/Vector copy 13.svg" alt="">
+                </div>
+            </div>
+            <div class="signup_3" id="mob_signup_3">
+                <div class="signup_3_1">
+                    <div class="user_info">
+                        <div class="user_input">
+                            <input type="text" name="f_name" id="fname" placeholder="First Name">
+                            <input type="text" name="l_name" id="lname" placeholder="Last Name">
+                        </div>
+                        <div class="user_input">
+                            <input type="email" placeholder="Email" name="email" id="">
+                        </div>
+                        <div class="user_input pass">
+                            <input type="password" placeholder="Password" name="pass" id="show_pass">
+                            <img src="images/visibility_24px_outlined.svg" alt="" class="pass_img">
+                        </div>
+                        <div class="user_input">
+                            <input type="password" placeholder="Confirm Password" name="confirm_pass" id="">
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 justify-content-center align-items-center crt_acc">
+                        <div class="col mob_crt_acc">Sign Up</div>
+                        <div class="col text-end signup2_2">
+                            <span class="signup2_2_1">or,</span>
+                            <span class="signup2_2_2" id="mob_go_to_sign">Sign In</span>
+                        </div>
+                    </div>
+                    <div class="facebook d-flex justify-content-center align-items-center">
+                        <div><img src="images/f_logo_RGB-Blue_1024.svg" alt=""></div>
+                        <div class="ms-2">Sign up with Facebook</div>
+                    </div>
+                    <div class="google d-flex justify-content-center align-items-center">
+                        <div><img src="images/search.svg" alt=""></div>
+                        <div class="ms-2">Sign up with Google</div>
+                    </div>
+                </div>
+            </div>
+            <div class="signup2 d-none row justify-content-between align-items-center" id="mob_signup_4">
+                <div class="col-10 signup2_1">Welcome Back !!! </div>
+                <div class="col-2 text-end" id="close_mob_sign_2" role="button">
+                    <img src="images/Vector copy 13.svg" alt="">
+                </div>
+            </div>
+
+
+            <div class="signup_3 d-none" id="mob_signup_5">
+                <div class="signup_3_1">
+                    <div class="user_info">
+                        <div class="user_input">
+                            <input type="email" placeholder="Email" name="email" id="">
+                        </div>
+                        <div class="user_input pass">
+                            <input type="password" placeholder="Password" name="pass" id="show_pass">
+                            <img src="images/visibility_24px_outlined.svg" alt="" class="pass_img">
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 justify-content-center align-items-center crt_acc">
+                        <div class="col mob_crt_acc">Sign In</div>
+                        <div class="col text-end signup2_2">
+                            <span class="signup2_2_1">or,</span>
+                            <span class="signup2_2_2" id="mob_go_to_create">Create Account</span>
+                        </div>
+                    </div>
+                    <div class="facebook d-flex justify-content-center align-items-center">
+                        <div><img src="images/f_logo_RGB-Blue_1024.svg" alt=""></div>
+                        <div class="ms-2">Sign in with Facebook</div>
+                    </div>
+                    <div class="google d-flex justify-content-center align-items-center">
+                        <div><img src="images/search.svg" alt=""></div>
+                        <div class="ms-2">Sign in with Google</div>
+                    </div>
+                    <div class="forgot">Forgot Password?</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- font-awesome javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+    integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- bootstrap javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+<!-- external javascript -->
+<script src="js/script.js"></script>
+
+</html>
